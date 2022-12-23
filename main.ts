@@ -1,13 +1,13 @@
-const double = music.beat(BeatFraction.Double)
-const whole = music.beat(BeatFraction.Whole)
-const half = music.beat(BeatFraction.Half)
-const quarter = music.beat(BeatFraction.Quarter)
-const eighth = music.beat(BeatFraction.Eighth)
-const sixteenth = music.beat(BeatFraction.Sixteenth)
-const breve = music.beat(BeatFraction.Breve)
-
 namespace rickroll_components {
-    export const components = [
+    const double = music.beat(BeatFraction.Double)
+    const whole = music.beat(BeatFraction.Whole)
+    const half = music.beat(BeatFraction.Half)
+    const quarter = music.beat(BeatFraction.Quarter)
+    const eighth = music.beat(BeatFraction.Eighth)
+    const sixteenth = music.beat(BeatFraction.Sixteenth)
+    const breve = music.beat(BeatFraction.Breve)
+
+    export const components: [number | "rest", number][] = [
         [349, whole],
         [349, half],
         ["rest", sixteenth],
